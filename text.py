@@ -20,10 +20,11 @@ def countword() -> int:
         newline = line.rstrip('\n')
 
         for w in newline.split():
-            if revowrd(w) == word:
+            if revowrd(w) == word.lower():
                 counter += 1
             file.write(revowrd(w) + " ")
         file.write('\n')
 
     file.close()
     return counter
+print(countword())
