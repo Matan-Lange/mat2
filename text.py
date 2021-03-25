@@ -27,4 +27,3 @@ def countword() -> int:
 
     file.close()
     return counter
-print(countword())
